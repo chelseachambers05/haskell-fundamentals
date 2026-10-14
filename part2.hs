@@ -1,7 +1,7 @@
 -- Chelsea Chambers
 -- # Part 2 Supermarket Bill
 
-{-  1. Please implement the supermarket bill program that we've covered in the class. Use the example database from the slides. 
+{- 1. Please implement the supermarket bill program that we've covered in the class. Use the example database from the slides. 
 
 Please add the following functions to the program:
 ### 2. Discount for Multiple Buys
@@ -104,7 +104,7 @@ formatDiscount d = t ++ sps ++ dollar ++ "\n"
 formatBill :: BillType -> String
 formatBill bx = "        Haskell Stores\n\n" ++ formatLines bx ++ formatDiscount (makeDiscount bx) ++ formatTotal (makeTotal bx - makeDiscount bx)
 
-{- ### 3. Updating the Database
+{-  3. Updating the Database
 Design functions to update the database of bar codes. Specifically, implement a function to add a `(BarCode, (Name, Price))` pair to the database while ensuring any previous reference to the same barcode is removed.
 -}
 removeBarCode :: Database -> BarCode -> Database

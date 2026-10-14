@@ -140,7 +140,7 @@ unzip :: [(a,b)] -> ([a],[b])
 unzip xs = ([x | (x,y) <- xs],[y | (x,y) <- xs])
 
 
-{- ## 2. Implement the following functions:
+{- 2. Implement the following functions:
 1. Fibonacci Table
 Define a function:
 
@@ -177,7 +177,7 @@ fibLines (x:xs) = fibLine x ++ fibLines xs
 fibTable :: Int -> String
 fibTable n = "n   fib n\n" ++ fibLines [0..n]
 
-{- ### 2. Palindrome Checker
+{- 2. Palindrome Checker
 Define a function:
 
 isPalin :: String -> Bool
